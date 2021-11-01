@@ -30,8 +30,8 @@
           <ul class="site-nav list">
             <li class="menu-item">
               <a href="./index.html" class="link connect-item-all current"
-                >Студия</a
-              >
+                >Студия
+              </a>
             </li>
             <li class="menu-item">
               <a href="./portfolio.html" class="link connect-item-all"
@@ -68,7 +68,11 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-hero button primary" type="button">
+          <button
+            data-modal-open
+            class="button-hero button primary"
+            type="button"
+          >
             Заказать услугу
           </button>
         </div>
@@ -135,28 +139,37 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list list-doing">
             <li class="list-doing-item">
-              <img
-                class="image-item"
-                src="./images/doing_01.jpg"
-                alt="box1"
-                width="370"
-              />
+              <div class="thumb">
+                <img
+                  class="image-item"
+                  src="./images/doing_01.jpg"
+                  alt="box1"
+                  width="370"
+                />
+                <h3 class="text-doing">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="list-doing-item">
-              <img
-                class="image-item"
-                src="./images/doing_02.jpg"
-                alt="box2"
-                width="370"
-              />
+              <div class="thumb">
+                <img
+                  class="image-item"
+                  src="./images/doing_02.jpg"
+                  alt="box2"
+                  width="370"
+                />
+                <h3 class="text-doing">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="list-doing-item">
-              <img
-                class="image-item"
-                src="./images/doing_03.jpg"
-                alt="box3"
-                width="370"
-              />
+              <div class="thumb">
+                <img
+                  class="image-item"
+                  src="./images/doing_03.jpg"
+                  alt="box3"
+                  width="370"
+                />
+                <h3 class="text-doing">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -446,5 +459,16 @@
         </div>
       </div>
     </footer>
+    <!-- модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="close-icon" width="18px" height="18px">
+            <use href="/images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
